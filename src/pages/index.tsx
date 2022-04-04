@@ -23,7 +23,7 @@ function HomepageHeader() {
             */}
           <Link
             className="button button--secondary button--lg"
-            to="/docs/Hello">
+            to="/docs/hello">
             Hello from John Telford 
           </Link>
 
