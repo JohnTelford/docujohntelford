@@ -6,6 +6,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 
+
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
@@ -20,18 +21,23 @@ function HomepageHeader() {
             to="/docs/intro">
             Docusaurus Tutorial - 5min ⏱️
           </Link>
-            */}
+            
+            
           <Link
             className="button button--secondary button--lg"
-            to="/docs/hello">
+            to="/docs/intro">
             Hello from John Telford 
           </Link>
+          */}
 
+          
   </div>
       </div>
     </header>
   );
 }
+
+
 
 export default function Home(): JSX.Element {
   const {siteConfig} = useDocusaurusContext();
@@ -46,3 +52,4 @@ export default function Home(): JSX.Element {
     </Layout>
   );
 }
+

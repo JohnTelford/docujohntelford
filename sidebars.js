@@ -24,8 +24,7 @@ const sidebars = {
       label: 'Tutorial',
       items: ['hello'],
     },
-  ],
-   */
+   */  
 };
 
 module.exports = sidebars;
