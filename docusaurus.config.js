@@ -63,11 +63,14 @@ const config = {
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {to: '/blog/tags', label: 'Tags', position: 'left'},
+
+          /*
           {
             href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
             position: 'right',
           },
+        */
         ],
       },
       /*
@@ -128,6 +131,7 @@ const config = {
         require.resolve("@cmfcmf/docusaurus-search-local") ,
         {
           indexDocs: true,
+          indexDocSidebarParentCategories: 1,
         },
       ],
     ],
