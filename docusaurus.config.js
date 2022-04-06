@@ -22,6 +22,7 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
@@ -55,11 +56,12 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'intro',
+            docId: 'index',
             position: 'left',
             label: 'Home',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
+          {to: '/blog/tags', label: 'Tags', position: 'left'},
           {
             href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
@@ -67,6 +69,7 @@ const config = {
           },
         ],
       },
+      /*
       footer: {
         style: 'dark',
         links: [
@@ -112,6 +115,7 @@ const config = {
         ],
         copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
       },
+    */
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,

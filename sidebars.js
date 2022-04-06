@@ -28,7 +28,7 @@ const sidebars = {
 
     sidebar: [   
         { 'Home': [
-            'intro',
+            'index',
             'siteoverview',
         ]
       },
