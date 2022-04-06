@@ -40,6 +40,7 @@ const config = {
           customCss: require.resolve('./src/css/custom.css'),
         },
       }),
+      
     ],
   ],
 
@@ -121,6 +122,15 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
+    
+    plugins: [
+      [
+        require.resolve("@cmfcmf/docusaurus-search-local") ,
+        {
+          indexDocs: true,
+        },
+      ],
+    ],
 };
 
 module.exports = config;
