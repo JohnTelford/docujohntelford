@@ -25,6 +25,32 @@ const sidebars = {
       items: ['hello'],
     },
    */  
+
+    sidebar: [   
+        { 'Home': [
+            'intro',
+            'siteoverview',
+        ]
+      },
+
+      { 
+        'Teams': [
+          'teamoverview',
+          'define',
+          'design',
+          'develop',
+          'deploy',
+          'maintain',
+      ]
+    },
+
+      {
+         'Tools' : [
+           'tools',
+         ],
+      },
+  ],
+
 };
 
 module.exports = sidebars;

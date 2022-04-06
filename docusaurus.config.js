@@ -26,6 +26,7 @@ const config = {
           // Please change this to your repo.
           editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
+      
         blog: {
           blogSidebarTitle: 'All posts',
           blogSidebarCount: 'ALL',
@@ -43,6 +44,7 @@ const config = {
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
+    
     ({
       navbar: {
         title: 'JohnTelford.com LLC',
@@ -50,7 +52,6 @@ const config = {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
         },*/
-
         items: [
           {
             type: 'doc',
