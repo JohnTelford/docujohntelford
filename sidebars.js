@@ -29,7 +29,10 @@ const sidebars = {
     sidebar: [   
         { 'Home': [
             'index',
+            'navigation',
             'siteoverview',
+            'company',
+            'contact',
         ]
       },
 
