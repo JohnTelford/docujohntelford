@@ -41,16 +41,17 @@ const sidebars = {
           'develop',
           'deploy',
           'maintain',
-      ]
-    },
+        ],
+      },
 
       {
-         'Tools' : [
-           'tools',
-         ],
-      },
-  ],
+        'Tools' : [
+          'workstations',
+        ],
 
+      },
+
+    ],
 };
 
 module.exports = sidebars;
