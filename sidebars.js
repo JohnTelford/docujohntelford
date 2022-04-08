@@ -38,7 +38,7 @@ const sidebars = {
 
       { 
         'Teams': [
-          'teamoverview',
+          'teams',
           'define',
           'design',
           'develop',

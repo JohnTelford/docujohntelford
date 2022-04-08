@@ -130,7 +130,7 @@ const config = {
       [
         require.resolve("@cmfcmf/docusaurus-search-local") ,
         {
-          indexDocs: false,
+          indexDocs: true,
           indexDocSidebarParentCategories: 1,
         },
       ],
