@@ -55,6 +55,11 @@ const sidebars = {
         ],
       },
 
+      {
+        'Colophon': [
+          'colophon',
+        ],
+      },
 
 
     ],
