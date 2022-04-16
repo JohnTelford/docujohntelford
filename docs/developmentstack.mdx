@@ -1,0 +1,27 @@
+---
+id: developmentstack
+title: Development Stack
+---
+
+:::info
+The _Iterative Website Development Stack_ illustrates how websites are developed and deployed to the Internet. It is web browser agnostic. What works for big screens, works for small screens.
+:::
+
+![Developer Iterative Development Stack](/img/webdevstack.png)
+
+:::caution
+The key _Iterative Development_ technologies are [`Git`](https://git-scm.com) and [`GitHub`](https://github.com/).
+:::
+
+**Development Stack**
+
+- Team members use the Website Development Stack to develop and deploy websites to the Internet. There would be confusion and possible defects created if Team members were to directly make changes to the same project repository.  
+A solution to this problem is to have one central repository controlled by a gatekeeper. Each team member forks a copy to their GetHub account and makes a clone of it on their workstation.
+
+- Each developer makes changes to their clone repository. They cannot directly make changes to the central repository. Team members may deploy their copy of the clone repository with their changes, to a private Internet website for stakeholders to see and give feedback.
+
+- The process is managed using [GitHub for Teams](https://github.com/team). When stakeholders determine developers changes, defect fixes, or new features are ready, a GitHub pull request is made by developers to the central project repository. Project team members and the gatekeeper are notified by GitHub of the pull request. They may examine, comment on, suggest possible changes, and test the code. When the team agrees on developers changes, they are committed to the central project repository by the gatekeeper. This process is repeated for each developer set of changes. Iterations of the central project repository may be deployed by the gatekeeper to a private website for stakeholders viewing.
+
+- The next step is each developer pulls the central repository changes and commits them to their local copy of the central project repository. This process keeps team members up to date on changes.
+
+- The central project repository may be deployed to the public Internet by the gatekeeper after stakeholders agree there have been sufficient development and testing iterations.
