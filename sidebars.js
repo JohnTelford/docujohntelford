@@ -37,19 +37,19 @@ const sidebars = {
           'teams',
           'define',
           'design',
+          {
+            'Team - Develop': [
+              'develop',
+              'developmentstack',
+              'material',
+              'programming',
+              'workstations',
+              'developmenttools',
+            ],
+          },
+    
           'deploy',
           'maintain',
-        ],
-      },
-
-      {
-        'Development': [
-          'develop',
-          'developmentstack',
-          'material',
-          'programming',
-          'workstations',
-          'developmenttools',
         ],
       },
 
