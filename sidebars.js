@@ -43,6 +43,7 @@ const sidebars = {
               'developmentstack',
               'material',
               'programming',
+              'webcomp',
               'workstations',
               'developmenttools',
             ],
