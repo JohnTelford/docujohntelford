@@ -59,8 +59,12 @@ const sidebars = {
         ],
       },
 
-        'company',
-        'contact',
+      {
+        'Company':[
+          'company',
+          'contact',
+        ],
+      },
 
     ],
 };
