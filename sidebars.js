@@ -55,17 +55,14 @@ const sidebars = {
       },
 
       {
-        'Colophon': [
-          'colophon',
-        ],
-      },
-
-      {
         'Company':[
           'company',
           'contact',
         ],
       },
+
+       'colophon',
+      'glossary',
 
     ],
 };
