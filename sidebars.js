@@ -46,6 +46,7 @@ const sidebars = {
               'webcomp',
               'workstations',
               'developmenttools',
+              'languagesref',
             ],
           },
     
