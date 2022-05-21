@@ -128,13 +128,24 @@ const config = {
     
     plugins: [
       [
-        require.resolve("@cmfcmf/docusaurus-search-local") ,
+        require.resolve("@easyops-cn/docusaurus-search-local"),
         {
-          indexDocs: true,
-          indexDocSidebarParentCategories: 1,
+          // ... Your options.
+         // indexDocs: true,
+         // indexBlog: false,
+        indexPages: true,
+        highlightSearchTermsOnTargetPage: true,
+          // `hashed` is recommended as long-term-cache of index file is possible.
+         hashed: true,
+          // For Docs using Chinese, The `language` is recommended to set to:
+          // ```
+          // language: ["en", "zh"],
+          // ```
         },
       ],
     ],
+
+
 };
 
 module.exports = config;
