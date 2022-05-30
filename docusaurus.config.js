@@ -27,15 +27,8 @@ const config = {
           // Please change this to your repo.
           // editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
-      
-        blog: {
-          blogSidebarTitle: 'All posts',
-          blogSidebarCount: 'ALL',
-          showReadingTime: true,
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
+
+
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -131,8 +124,7 @@ const config = {
         require.resolve("@easyops-cn/docusaurus-search-local"),
         {
           // ... Your options.
-         // indexDocs: true,
-         // indexBlog: false,
+        indexDocs: true,
         indexPages: true,
         highlightSearchTermsOnTargetPage: true,
           // `hashed` is recommended as long-term-cache of index file is possible.
