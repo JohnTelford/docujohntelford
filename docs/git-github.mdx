@@ -3,15 +3,25 @@ id: git-github
 title: Git-Github
 ---
 
+:::tip
+
+[Git and GitHub Introduction](https://www.w3schools.com/git/git_intro.asp?remote=github) website is a way to get an understanding of git and Github. Use it to better understand this website page material.
+
+[w3cubDocs / Git](https://docs.w3cub.com/git/) is a more in depth Git resource 
+:::
+
+
 ## GitHub
 
-The core technologies of Iterative Development are the GitHub central project repository controlled by the project gatekeeper, and the content delivery network, like Cloudflare, deploying private preview and production websites and individual team members private preview websites.
+[GitHub Get Started](https://www.w3schools.com/git/git_remote_getstarted.asp?remote=github)
+
+The core technologies of Iterative Development are Git, GitHub central project repository controlled by the project gatekeeper, and a content delivery network, like [Cloudflare](#deploy/cloudflare), deploying private [Preview](deploy#preview) Internet websites, production websites, and individual team members private [Preview](deploy#preview) websites.
 
 GitHub is a Distributed Version Control Systems enabling multiple teams to work separately on the same project without having an impact on the work of others. GitHub manages an online web hosted central project repository containing all project files. It is a unified source of truth. It helps teams collaborate and maintain the entire history of project file changes.
 
 > It helps answer the questions for the lifetime of the project *who changed what, where, when, and why?* 
 
-Team members use the [Website Development Stack](#website-development-stack) to develop and deploy websites to the Internet.
+Team members use the [Website Development Stack](website-development-stack) to develop and deploy websites to the Internet.
 
 ### The GitHub Workflow
 
@@ -35,32 +45,81 @@ Teams may [Pull](#pull) the central project repository at anytime to view and te
 
 ## Git
 
-## Basic Git Commands
+### Basic Git Commands
+
+[Git Tutorial](https://www.w3schools.com/git/default.asp?remote=github)
+
+### Fork
+
+[Git GitHub Fork](https://www.w3schools.com/git/git_remote_fork.asp?remote=github)
+
+A *fork* is a copy of the project repository in a team member's GitHub account. Forks let team members make changes to a project without affecting the original repository or other team members. Team members can fetch updates from the project repository with a [pull](#pull) command
+
+ Forks are used to either propose changes to someone else's project to which you do not have write access, or to use someone else's project as a starting point for your own idea. You can fork a repository to create a copy of the repository and make changes without affecting the upstream repository
+
+Forking a repository is similar to copying a repository, with two major differences:
+
+- You can use a pull request to suggest changes from your user-owned fork to the original repository in its GitHub instance, also known as the upstream repository.
+
+- You can bring changes from the upstream repository to your local fork by synchronizing your fork with the upstream repository.
+
+[Fork a Repo](https://docs.github.com/en/enterprise-server@3.4/get-started/quickstart/fork-a-repo)
+
+### Clone
+
+[Git Clone from GitHub](https://www.w3schools.com/git/git_clone.asp?remote=github)
+
+A clone is a full copy of a repository, including all logging and versions of files.
+
+### Branch
+
+[Git Branch](https://www.w3schools.com/git/git_branch.asp?remote=github)
+
+Creating a branch is to safely diverge from a line of development and continuing on another. An example is creating a branch create a feature or to test a radical idea
+
+Branching enables working on different parts of a project without impacting other branches. Work on a branch can be merged with other project branches. 
+
+Switching between branches and work on different projects without them interfering with each other. Branching in Git is lightweight and fast!
+
+### Checkout
 
 ### Switch 
 
 switches to a new branch
 
-### Restore
+A quick way of switching branch on Git is to use the “git switch” command and specify the name of the branch you want to switch to.
 
-restores a previous version of a file while staying on the same branch
+If the destination branch does not exist, you have to specify the “-c” option (for “create branch“), otherwise you will get an error message when switching to that branch.
 
-### Branch
+$ git switch <existing_branch>
 
-Creating a branch is to safely diverge from a line of development and continuing on another. An example is creating a branch to test a radical idea
+$ git switch -c <non_existing_branch>
+Again, as an example, let’s say that you want to switch to the “feature” branch from the “master” branch.
 
-Branching enables working on different parts of a project without impacting other branches. Work on a branch can be merged with other project branches. Switching between branches
-and work on different projects without them interfering with each other. Branching in Git is very
-lightweight and fast! New Git Branch
+In order to switch from the “master” branch to the “feature” branch, use the “git switch” command and specify the destination branch (which is “feature” in this case)
+
+$ git switch feature
+switch branch using git switch
+On the other hand, if you try to switch to a non existing branch, you will get the following error message
+
+$ git switch non-existing-branch
+
+fatal: invalid reference: non-existing-branch
+To solve this error, make sure to append the “-c” option to the “git switch” command to specify that you want to switch to a new branch.
+
+$ git switch -c non-existing-branch
+
+Switched to a new branch 'non-existing-branch'
+Congratulations, you have now successfully switched to another branch and you can start working on it.
 
 
-### Fork
+### Stage
 
-A *fork* is copying the central website project repository to a team member GitHub accounts. Teams make changes to the website project repository publicly as a way to contribute in a more open manner.
+### Commit
 
-A *fork* is a copy of the project repository in a team member's GitHub account. Forks let teams make changes to a project without affecting the original repository or other team members. Teams can fetch updates from the project repository with a [pull](#pull) command from or submit changes using the [Pull Requests](#pull-request)
+### Push
 
-[About Forks](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/about-forks)
+
 
 ### Pull
 
@@ -70,9 +129,6 @@ Pull requests let teams tell others about changes that have been pushed to a bra
 
 [About pull requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
 
-### Push
-
-
 
 
 :::tip
@@ -80,3 +136,8 @@ Pull requests let teams tell others about changes that have been pushed to a bra
 The [VScode](#vscode) development environment has these and other Git command built-in 
 
 :::
+
+### Restore
+
+restores a previous version of a file while staying on the same branch
+

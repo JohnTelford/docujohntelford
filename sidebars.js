@@ -40,7 +40,7 @@ const sidebars = {
           {
             'Team - Develop': [
               'develop',
-              'developmentstack',
+              'website-development-stack',
               'material',
               'programming',
               'webcomp',
@@ -62,9 +62,6 @@ const sidebars = {
           'contact',
         ],
       },
-
-       'colophon',
-      'glossary',
 
     ],
 };
