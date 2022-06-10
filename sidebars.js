@@ -47,6 +47,7 @@ const sidebars = {
               'workstations',
               'developmenttools',
               'languagesref',
+              'git-github',
             ],
           },
     

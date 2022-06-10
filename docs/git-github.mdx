@@ -1,0 +1,82 @@
+---
+id: git-github
+title: Git-Github
+---
+
+## GitHub
+
+The core technologies of Iterative Development are the GitHub central project repository controlled by the project gatekeeper, and the content delivery network, like Cloudflare, deploying private preview and production websites and individual team members private preview websites.
+
+GitHub is a Distributed Version Control Systems enabling multiple teams to work separately on the same project without having an impact on the work of others. GitHub manages an online web hosted central project repository containing all project files. It is a unified source of truth. It helps teams collaborate and maintain the entire history of project file changes.
+
+> It helps answer the questions for the lifetime of the project *who changed what, where, when, and why?* 
+
+Team members use the [Website Development Stack](#website-development-stack) to develop and deploy websites to the Internet.
+
+### The GitHub Workflow
+
+GitHub workflow is centered on [Pull Requests](#pull-request). The GitHub workflow works with collaborating tightly-knit team members contributing to the central project repository using the [Forks](#fork). It is centered on the topic [Branches](#branch) workflow.
+
+A summary of GitHub workflow for each team member is:
+
+1. [Fork](#fork) the central project repository creating a local project repository in individual team members GitHub account
+2. [Clone](#clone) the forked local project repository in team member GitHub account to workstation
+1. Creates a topic [branch](#branch) off the cloned local project repository *develop* branch
+1. Make topic edits and commits 
+2. Push after each commit to the cloned local project repository in GitHub account
+3. Periodicity [Pull](#pull) from the central project repository. The *develop* branch will have merged accepted [Pull Request](#pull-request)
+3. Deploy local project repository to a private website periodically for stake holders viewing. This reduces the [Pull Request](#pull-request) evaluation time because stake holders interested in topics can see how they are progressing and working with the website.
+4. Open a [Pull Request](#pull-request) on the GitHub local project repository to begin the  process of integrating the local project repository with the central project repository  
+1. Team members discuss, and optionally continue committing on [Pull Requests](#pull-request).
+
+The project gatekeeper merges or closes Pull Requests to the central project repository, and deploys the central project repository to a private website for stack holders viewing. The teams and gatekeeper continues the GitHub workflow process until stack holders agree the central project repository is ready for release to the public internet 
+
+Teams may [Pull](#pull) the central project repository at anytime to view and test other topic branches.
+
+## Git
+
+## Basic Git Commands
+
+### Switch 
+
+switches to a new branch
+
+### Restore
+
+restores a previous version of a file while staying on the same branch
+
+### Branch
+
+Creating a branch is to safely diverge from a line of development and continuing on another. An example is creating a branch to test a radical idea
+
+Branching enables working on different parts of a project without impacting other branches. Work on a branch can be merged with other project branches. Switching between branches
+and work on different projects without them interfering with each other. Branching in Git is very
+lightweight and fast! New Git Branch
+
+
+### Fork
+
+A *fork* is copying the central website project repository to a team member GitHub accounts. Teams make changes to the website project repository publicly as a way to contribute in a more open manner.
+
+A *fork* is a copy of the project repository in a team member's GitHub account. Forks let teams make changes to a project without affecting the original repository or other team members. Teams can fetch updates from the project repository with a [pull](#pull) command from or submit changes using the [Pull Requests](#pull-request)
+
+[About Forks](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/about-forks)
+
+### Pull
+
+### Pull Request
+
+Pull requests let teams tell others about changes that have been pushed to a branch in their GitHub account forked project repository. Once a pull request is opened by the project team gatekeeper, teams can discuss and review the potential changes with collaborators and add follow-up commits before changes are merged into the website central project repository.
+
+[About pull requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
+
+### Push
+
+
+
+
+:::tip
+
+The [VScode](#vscode) development environment has these and other Git command built-in 
+
+:::
