@@ -5,15 +5,47 @@ title: Git-Github
 
 :::tip
 
+
 [Git and GitHub Introduction](https://www.w3schools.com/git/git_intro.asp?remote=github) website is a way to get an understanding of git and Github. Use it to better understand this website page material.
 
+[GitHub Desktop](https://docs.github.com/en/desktop) is a Microsoft product available on Mac and Windows. It interacts with GitHub using a GUI instead of the command line or a web browser. Use GitHub Desktop to complete many Git commands such as pushing to, pulling from, and cloning remote repositories, attributing commits, and creating pull requests, with visual confirmation of changes.
+
 [w3cubDocs / Git](https://docs.w3cub.com/git/) is a more in depth Git resource 
+
 :::
 
+:::note
+
+The tools used to create and maintain this website are:
+
+- GitHub Desktop   
+Abstract Github and Git commands
+
+- Fork  
+Presents GitHub information differently than GitHub Desktop
+
+- iA Writer  
+Using [iA Writer](material#iawriter) for creating and editing website material and blog posts is faster: 
+	- Focus without editor distractions
+	- Grammar and spelling checking
+	- Live Preview
+	- Sort file
+		- Name
+		- Modification time 
+	- Text 
+		- Lookup
+		- Transformation
+
+- VScode  
+Check programming semantics. Render and test website pages before deploying a private Internet [Preview](deploy#preview) for stake holders. Defects are fixed in iA Writer
+
+Create and maintaining website pages quicker and less error prone using these applications than using VScode alone.
+ 
+:::
 
 ## GitHub
 
-[GitHub Get Started](https://www.w3schools.com/git/git_remote_getstarted.asp?remote=github)
+
 
 The core technologies of Iterative Development are Git, GitHub central project repository controlled by the project gatekeeper, and a content delivery network, like [Cloudflare](#deploy/cloudflare), deploying private [Preview](deploy#preview) Internet websites, production websites, and individual team members private [Preview](deploy#preview) websites.
 
@@ -69,7 +101,9 @@ Forking a repository is similar to copying a repository, with two major differen
 
 [Git Clone from GitHub](https://www.w3schools.com/git/git_clone.asp?remote=github)
 
-A clone is a full copy of a repository, including all logging and versions of files.
+A clone is a full copy of a repository, including all logging and versions of files, copied from the team member GitHub account to team member workstation.
+
+[Commits](#commits) keep the team member local project repository up to date on the workstation and on GitHub. If the workstation copy is damaged, the latest commit can be cloned from GitHubto the workstation.
 
 ### Branch
 
@@ -115,9 +149,22 @@ Congratulations, you have now successfully switched to another branch and you ca
 
 ### Stage
 
+[Git Staging Environment](https://www.w3schools.com/git/git_staging_environment.asp?remote=github)
+
+One of the core functions of Git is the concepts of the Staging Environment, and the Commit. Staged files are files that are ready to be committed to the repository.
+
 ### Commit
 
+[Git Commit](https://www.w3schools.com/git/git_commit.asp?remote=github)
+
+Commits keep track of project changes. A message is required. *Who changed what, where, when, and why* is logged to the project history.
+
+Commit messages matter. Here's [How to Write a Git Commit Message](file:///Users/johntelford/Documents/EagleFiler/Files/How%20to%20Write%20a%20Git%20Commit%20Message.webarchive)
+.
+
 ### Push
+
+Git Push to [GitHub](https://www.w3schools.com/git/git_push_to_remote.asp?remote=github)
 
 
 
@@ -133,7 +180,7 @@ Pull requests let teams tell others about changes that have been pushed to a bra
 
 :::tip
 
-The [VScode](#vscode) development environment has these and other Git command built-in 
+The [VScode](#vscode) development environment has several of these and other Git command built-in 
 
 :::
 
@@ -141,3 +188,4 @@ The [VScode](#vscode) development environment has these and other Git command bu
 
 restores a previous version of a file while staying on the same branch
 
+## Git Utilities
