@@ -40,14 +40,15 @@ const sidebars = {
           {
             'Team - Develop': [
               'develop',
+              'developmenttools',
               'website-development-stack',
-              'material',
+              'vscode',
+              'git-github',
               'programming',
               'webcomp',
               'workstations',
-              'developmenttools',
+              'material',
               'languagesref',
-              'git-github',
             ],
           },
     
