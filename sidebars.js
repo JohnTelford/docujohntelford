@@ -45,7 +45,6 @@ const sidebars = {
               'vscode',
               'git-github',
               'programming',
-              'webcomp',
               'workstations',
               'material',
               'languagesref',
