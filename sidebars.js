@@ -47,7 +47,6 @@ const sidebars = {
               'programming',
               'workstations',
               'material',
-              'languagesref',
             ],
           },
     
