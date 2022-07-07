@@ -57,34 +57,26 @@ This extension quickly searches the local repository workspace for comment tags 
 - [VScode](#vscode)-icons  
 Icons for Visual Studio Code
 
-### Git Client
-
-[VScode](#vscode) built-in git commands :
-
- - Review diffs, 
- - Stage files
- - Make commits
- - Push 
- - pull
- - and more
-
-:::info
-
-[Use Git version-control tools in Visual Studio Code](https://docs.microsoft.com/en-us/learn/modules/use-git-from-vs-code/)
- 
-:::
-
 ---
+
+## Git and GitHub References
 
 :::tip
 
-Check out [Version Control System](https://www.w3docs.com/learn-git/introduction4.html)
+These Git and Github references explain concepts and commands
+
+- [Version Control System](https://www.w3docs.com/learn-git/introduction4.html)
+- [VScode](#vscode) built-in git commands
+- [Git version-control tools in Visual Studio Code](https://docs.microsoft.com/en-us/learn/modules/use-git-from-vs-code/)
+- [Git](https://git-scm.com/book/en/v2)
+- [GitHub](https://docs.microsoft.com/en-us/learn/modules/introduction-to-github/)
+- [GitHub Desktop](https://docs.github.com/en/desktop)
 
 :::
 
 ## GitHub
 
-The core technologies of Iterative Development are [Git](https://git-scm.com/book/en/v2), and [GitHub](https://docs.microsoft.com/en-us/learn/modules/introduction-to-github/). The central project repository is controlled by the project gatekeeper, and a content delivery network, like [Cloudflare](#deploy/cloudflare), where Internet production websites and individual team private [Preview](deploy#preview) Internet websites, are deployed.
+The core technologies of Iterative Development are, Git and GitHub. The central project repository is controlled by the project gatekeeper, and a content delivery network, like [Cloudflare](#deploy/cloudflare), where Internet production websites and individual team private [Preview](deploy#preview) Internet websites, are deployed.
 
 GitHub is a Distributed Version Control Systems enabling multiple teams to work separately on the same project without having an impact on the work of others. GitHub manages an online web hosted central project repository containing all project files. It is a unified source of truth. It helps teams collaborate and maintain the entire history of project file changes.
 
@@ -94,45 +86,36 @@ Team members use the [Website Development Stack](website-development-stack) to d
 
 ### The GitHub Workflow
 
-GitHub workflow is centered on [Pull Requests](#https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests). The GitHub workflow works with collaborating tightly-knit team members contributing to the central project repository using the [Forks](#fork). It is centered on the topic [Branches](#branch) workflow.
+GitHub workflow is centered on Pull Request The GitHub workflow works with collaborating team members contributing to the central project repository using the Forks. It is centered on the topic Branches workflow.
 
 A summary of GitHub workflow for each team member is:
 
-1. [Fork](#fork) the central project repository creating a local project repository in individual team members GitHub account
-2. [Clone](#clone) the forked local project repository in team member GitHub account to workstation
-1. Creates a topic [branch](#branch) off the cloned local project repository *develop* branch
+1. Fork the central project repository creating a local project repository in individual team members GitHub account
+2. Clone the forked local project repository in team member GitHub account to workstation
+1. Creates a topic Branch off the cloned local project repository *main* branch
 1. Make topic edits and commits 
 2. Push after each commit to the cloned local project repository in GitHub account
-3. Periodicity [Pull](#pull) from the central project repository. The *develop* branch will have merged accepted [Pull Requests](#https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
-3. Deploy local project repository to a private website periodically for stake holders viewing. This reduces the Pull Request] evaluation time because stake holders interested in topics can see how they are progressing and working with the website.
+3. Periodically Pull from the central project repository. The *develop* branch will have merged accepted Pull Requests
+4. Periodically deploy local project repository to a private [Preview ](deploy#preview) website without disturbing other developers work or the production version, for stake holders viewing and feedback. This reduces the Pull Request evaluation time because stake holders interested in topics can see how they are progressing and working with the website.
 4. Open a Pull Request on the GitHub local project repository to begin the  process of integrating the local project repository with the central project repository  
 1. Team members discuss, and optionally continue committing on Pull Requests.
 
-The project gatekeeper merges or closes Pull Requests to the central project repository, and deploys the central project repository to a private website for stack holders viewing. The teams and gatekeeper continues the GitHub workflow process until stack holders agree the central project repository is ready for release to the public internet 
+The project gatekeeper merges or closes Pull Requests to the central project repository, and deploys the central project repository to a private [Preview ](deploy#preview) website for stack holders viewing. The teams and gatekeeper continues the GitHub workflow process until stack holders agree the central project repository is ready for release to the public internet 
 
-Teams may [Pull](https://www.w3docs.com/learn-git/git-pull.html) the central project repository at anytime to view and test other topic branches.
+Teams may Pull the central project repository at anytime to view and test other topic branches.
 
 ---
 
 ## Git
 
-[Git](https://git-scm.com/book/en/v2) is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
+Git is a free and open source distributed version control system designed to handle everything from small to large projects with speed and efficiency.
 
-:::info
-
-- [Git version-control tools in Visual Studio Code](https://docs.microsoft.com/en-us/learn/modules/use-git-from-vs-code/) explaines Git commands for working with projects teams
-
-- [Version Control System](https://www.w3docs.com/learn-git/introduction4.html)
- 
-:::
 
 ---
  
 ### Git Desktop
 
-![gitdesktop](/img/gitdesktop.png)
-
-[GitHub Desktop](https://docs.github.com/en/desktop) is an alternative to using [VScode](#vscode) built-in Git commands. It abstract Github and more Git commands. It interacts with GitHub using a GUI instead of the command line or a web browser. It is a Microsoft product available on Mac and Windows.
+ Git Desktop is an alternative to using [VScode](#vscode) built-in Git commands. It abstract Github and more Git commands. It interacts with GitHub using a GUI instead of the command line or a web browser. It is a Microsoft produc t available on Mac and Windows.
 
 [GitHub Desktop and VSCode](http://www.rodanthi-alexiou.com/github-101-github-desktop-and-vscode/) documents explain how to use GitHub Desktop with [VScode](#vscode). 
 
