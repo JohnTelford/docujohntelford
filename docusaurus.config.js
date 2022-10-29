@@ -34,10 +34,10 @@ const config = {
           // editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
 
-          blog: {
+          /* blog: {
             blogSidebarTitle: 'All posts',
             blogSidebarCount: 'ALL',
-          },
+          }, */
 
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -53,6 +53,7 @@ const config = {
     ({
       navbar: {
         title: 'JohnTelford.com LLC',
+        hideOnScroll: true,
       /*  logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
@@ -64,8 +65,8 @@ const config = {
             position: 'left',
             label: 'Home',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
-          {to: '/blog/tags', label: 'Tags', position: 'left'},
+          {href: 'https://techtalkjohn.com', label: 'techtalkjohn.com', position: 'left'},
+          /* {to: '/blog/tags', label: 'Tags |', position: 'left'}, */
 
           /*
           {

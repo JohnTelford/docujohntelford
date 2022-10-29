@@ -60,6 +60,12 @@ const sidebars = {
         ],
       },
 
+      {
+        'Glossary': [
+          'glossary',
+        ],
+      },
+
     ],
 };
 
